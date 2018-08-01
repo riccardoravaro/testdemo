@@ -4,7 +4,7 @@ $(document).ready(function() {
         button = document.getElementById("submit1"),
         text = document.getElementById("filter"),
         list = document.getElementById("list");
-    list.innerHTML += '<div class="card ml-2 mb-2"><div class="card-body">card2</div></div>';
+    list.innerHTML += '<div class="card ml-0 mb-2"><div class="card-body">card2</div></div>';
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         alert("Stopping with value: " + text.value);
@@ -21,7 +21,7 @@ $(document).ready(function() {
                 });
                 datafilterd.forEach(function(entry) {
                     console.log(entry);
-                    list.innerHTML += '<div class="card ml-2 mb-2"><div class="card-body">card1</div></div>';
+                    list.innerHTML += '<div class="card ml-0 mb-2"><div class="card-body">card1</div></div>';
                 });
             } else {
                 // We reached our target server, but it returned an error
